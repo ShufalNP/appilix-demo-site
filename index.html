@@ -7,6 +7,26 @@
 </head>
 <body>
   <p>Home Page</p>
- 
+   <script>
+    appilix.postMessage(JSON.stringify({
+    type: "update_settings",
+    updates: {
+        modules: {
+            app_bar: {
+                settings: {
+                    bg_color: {
+                        light: "#00FF00",
+                        dark: "#00FF00"
+                    },
+                    title_color: {
+                        light: "#ffffff",
+                        dark: "#ffffff"
+                    },
+                }
+            }
+        }
+    }
+}));
+  </script>
 </body>
 </html>
